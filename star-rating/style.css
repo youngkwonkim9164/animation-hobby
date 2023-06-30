@@ -21,6 +21,7 @@ body {
 span.result {
   color: #fff;
   transition: all 1s;
+  font-size: 16px;
 }
 
 .rating {
