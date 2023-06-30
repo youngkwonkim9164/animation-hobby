@@ -14,43 +14,24 @@
 
 <body>
   <div class="container">
+    <span class="result"></span>
     <div class="rating">
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-      <input type="radio" name="clr1" style="--c: #ff9933;" />
-    </div>
-    <div class="rating">
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-      <input type="radio" name="clr2" style="--c: #fff;" />
-    </div>
-    <div class="rating">
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
-      <input type="radio" name="clr3" style="--c: #2ae418;" />
+      <input type="radio" name="clr1" style="--c: #ecda1b;" value="5" onchange="onChangeStars(event)" />
+      <input type="radio" name="clr1" style="--c: #ecda1b;" value="4" onchange="onChangeStars(event)" />
+      <input type="radio" name="clr1" style="--c: #ecda1b;" value="3" onchange="onChangeStars(event)" />
+      <input type="radio" name="clr1" style="--c: #ecda1b;" value="2" onchange="onChangeStars(event)" />
+      <input type="radio" name="clr1" style="--c: #ecda1b;" value="1" onchange="onChangeStars(event)" />
     </div>
   </div>
+
+  <script>
+    const onChangeStars = (event) => {
+      if (event.target.checked) {
+        document.querySelector(".result").innerHTML = event.target.value;
+      }
+    }
+
+  </script>
 </body>
 
 </html>

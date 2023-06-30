@@ -18,6 +18,11 @@ body {
   gap: 40px;
 }
 
+span.result {
+  color: #fff;
+  transition: all 1s;
+}
+
 .rating {
   position: relative;
   display: flex;
@@ -31,14 +36,6 @@ body {
     inset 15px 15px 3px rgba(255, 255, 255, 0.1),
     -4px -4px 15px rgba(255, 255, 255, 0.1),
     inset -2px -2px 12px rgba(0, 0, 0, 0.85);
-}
-
-.rating:nth-child(1) {
-  transform: translateX(-80px);
-}
-
-.rating:nth-child(3) {
-  transform: translateX(80px);
 }
 
 .rating input {
