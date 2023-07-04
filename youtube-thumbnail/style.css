@@ -3,19 +3,16 @@ html {
 }
 
 .youtubelist {
-  max-width: 1200px;
   margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
 
 .youtubelist > li {
   display: inline-block;
   vertical-align: top;
-  width: 33.3%;
 }
 
 .youtubelist > li > div {
@@ -44,7 +41,7 @@ html {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .youtubelist > li:hover .screen .on {
