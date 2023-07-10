@@ -9,11 +9,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title></title>
+  <title>git dashboard</title>
 </head>
 
 <body>
+  <secion class="sec"></secion>
+
   <script>
+    for (let i = 1; i <= 525; i++) {
+      let box = document.createElement("div");
+      box.classList.add('box');
+      document.querySelector(".sec").appendChild(box);
+    }
+
+    function animateBox() {
+      let boxes = document.querySelectorAll('.box');
+      let num = Math.floor(Math.random() * boxes.length); // 소수값 버리기
+      boxes[num].classList.toggle('animate');
+    }
+    setInterval(animateBox);
+
   </script>
 </body>
 
