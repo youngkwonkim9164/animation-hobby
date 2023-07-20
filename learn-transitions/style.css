@@ -1,5 +1,5 @@
 .btn {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.5em 1em;
   color: hotpink;
   border: 5px solid hotpink;
@@ -8,7 +8,7 @@
   /* transition 순서 */
   transition-property: transform;
   transition-duration: 0.3s;
-  transition-delay: 0s;
+  transition-delay: 0;
   transition-timing-function: ease;
 }
 
