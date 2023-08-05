@@ -56,3 +56,29 @@ body {
   font-size: 1.25em;
   transform: rotate(calc(30deg * var(--i)));
 }
+
+.numbers span b {
+  font-weight: 400;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+
+.numbers .circle {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.numbers .circle i {
+  position: absolute;
+  width: 6px;
+  height: 50%;
+  background: #fff;
+}
