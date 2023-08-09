@@ -35,9 +35,25 @@
       <span style="--i:11;"><b>11</b></span>
       </span>
     </div>
-  </div>
-  <script>
-  </script>
+
+    <script>
+      let hr = document.querySelector("#hrs");
+      let mn = document.querySelector("#min");
+      let sc = document.querySelector("#sec");
+
+      setInterval(() => {
+        let day = new Date();
+        let hh = day.getHours() * 30;
+        let mm = day.getMinutes() * 6;
+        let ss = day.getSeconds() * 6;
+
+        hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;; // 시침 세팅
+        mn.style.transform = `rotateZ(${mm}deg)`; // 분침
+        sc.style.transform = `rotateZ(${ss}deg)`; // 초침
+
+      })
+
+    </script>
 </body>
 
 </html>
