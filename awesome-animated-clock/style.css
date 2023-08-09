@@ -47,7 +47,18 @@ body {
     inset 7px 7px 7px rgba(255, 255, 255, 0.55),
     -9px -9px 15px rgba(255, 255, 255, 1);
 }
+.numbers::before {
+  content: "";
 
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #e91e63;
+  z-index: 10000;
+  box-shadow: 0 0 0 1px #e91e63, 0 0 0 3px #fff,
+    0 0 5px 5px rgba(09, 0, 0, 0.15);
+}
 .numbers span {
   position: absolute;
   inset: 15px;
@@ -102,4 +113,17 @@ body {
 .numbers .circle#hrs {
   width: 180px;
   height: 180px;
+}
+
+.numbers .circle::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--clr);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 }
