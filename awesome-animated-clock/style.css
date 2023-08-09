@@ -80,5 +80,26 @@ body {
   position: absolute;
   width: 6px;
   height: 50%;
-  background: #fff;
+  background: var(--clr);
+  opacity: 0.75;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+}
+
+.numbers .circle#sec i {
+  width: 2px;
+}
+
+.numbers .circle#min i {
+  width: 4px;
+}
+
+.numbers .circle#min {
+  width: 230px;
+  height: 230px;
+}
+
+.numbers .circle#hrs {
+  width: 180px;
+  height: 180px;
 }
